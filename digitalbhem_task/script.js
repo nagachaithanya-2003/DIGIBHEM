@@ -1,6 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
     const transferForm = document.getElementById("transfer-form");
     const transferBtn = document.getElementById("transfer-btn");
+    const accountBalanceElement = document.getElementById("account-balance-value");
+
+    let accountBalances = {
+        savings: 1000,
+        checking: 500
+    };
+
+    updateAccountBalance();
 
     transferBtn.addEventListener("click", function () {
         const fromAccount = document.getElementById("from-account").value;
@@ -12,7 +20,17 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        // Perform transfer logic here (e.g., update account balances)
-        alert(`Successfully transferred $${amount} from ${fromAccount} to ${toAccount}.`);
+        if (accountBalances[fromAccount] >= amount) {
+            accountBalances[fromAccount] -= amount;
+            accountBalances[toAccount] += amount;
+            updateAccountBalance();
+            alert(`Successfully transferred $${amount} from ${fromAccount} to ${toAccount}.`);
+        } else {
+            alert("Insufficient balance in the selected account.");
+        }
     });
+
+    function updateAccountBalance() {
+        accountBalanceElement.textContent = `$${accountBalances.savings} (Savings), $${accountBalances.checking} (Checking)`;
+    }
 });
