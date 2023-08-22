@@ -6,8 +6,8 @@ I am excited to share that I have successfully completed the task as a Web Devel
 
 # PROJECT DETAILS
 
-1.Task: online banking
-2.IDE: visual studio code
+1. Task: online banking
+2. IDE: visual studio code
 
 # Repository Contents
 
