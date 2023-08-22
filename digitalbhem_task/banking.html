@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Online Banking</title>
+</head>
+<body>
+    <header>
+        <h1>Online Banking System</h1>
+    </header>
+    
+    <main>
+        <section id="account-balance">
+            <h2>Account Balance</h2>
+            <p>Your current balance: $1000</p>
+        </section>
+        
+        <section id="transfer-funds">
+            <h2>Transfer Funds</h2>
+            <form id="transfer-form">
+                <label for="from-account">From Account:</label>
+                <select id="from-account">
+                    <option value="savings">Savings</option>
+                    <option value="checking">Checking</option>
+                </select>
+                <label for="to-account">To Account:</label>
+                <select id="to-account">
+                    <option value="savings">Savings</option>
+                    <option value="checking">Checking</option>
+                </select>
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" step="0.01" min="0">
+                <button type="button" id="transfer-btn">Transfer</button>
+            </form>
+        </section>
+        
+        <!-- Other sections for bill payment, online purchases, etc. can be added -->
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Online Banking System</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
