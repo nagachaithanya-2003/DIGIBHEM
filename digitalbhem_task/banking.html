@@ -35,6 +35,33 @@
                 <button type="button" id="transfer-btn">Transfer</button>
             </form>
         </section>
+
+        <section id="bill-payment">
+            <h2>Bill Payment</h2>
+            <form id="bill-payment-form">
+                <label for="bill-type">Bill Type:</label>
+                <select id="bill-type">
+                    <option value="electricity">Electricity</option>
+                    <option value="water">Water</option>
+                    <option value="internet">Internet</option>
+                    <option value="rent">Rent</option>
+                </select>
+                <label for="bill-amount">Amount:</label>
+                <input type="number" id="bill-amount" step="0.01" min="0">
+                <button type="button" id="pay-bill-btn">Pay Bill</button>
+            </form>
+        </section>
+
+        <section id="online-purchase">
+            <h2>Online Purchase</h2>
+            <form id="purchase-form">
+                <label for="product">Product:</label>
+                <input type="text" id="product" required>
+                <label for="purchase-amount">Amount:</label>
+                <input type="number" id="purchase-amount" step="0.01" min="0">
+                <button type="button" id="purchase-btn">Make Purchase</button>
+            </form>
+        </section>
     </main>
     
     <footer>
