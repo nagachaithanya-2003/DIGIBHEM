@@ -2,7 +2,7 @@
 
 Hello connections,
 
-I am excited to share that I have successfully completed the tasks as a Web Development intern at Digital Bhem of the August 2023 batch. In task-1 , I created a website for online banking using HTML , CSS and JAVASCRIPT. In task-2 , I designed and implemented an eco-friendly e-commerce website using HTML , CSS , JAVASCRIPT and PHP.
+I am excited to share that I have successfully completed the tasks as a Web Development intern at Digital Bhem of the August 2023 batch. In task-1 , I created a website for online banking using HTML , CSS, JAVASCRIPT, PHP, MYSQL, BOOTSTRAP. In task-2 , I designed and implemented an eco-friendly e-commerce website using HTML , CSS , JAVASCRIPT, MYSQL, PHP.
 
 # PROJECT DETAILS
 
@@ -16,9 +16,8 @@ I am excited to share that I have successfully completed the tasks as a Web Deve
 This repository contains the following files:
 
 Task-1:
-banking.html : The main HTML file containing the structure of the Online Banking web application, including sections for account balance and fund transfers.
+index.html : The main HTML file containing the structure of the Online Banking web application, including sections for account balance and fund transfers.
 styles.css : The CSS file providing styling and layout for the Online Banking web application.
-script.js : The JavaScript file adding interactivity to the Online Banking web application, handling fund transfer functionality and user interactions.
 
 Task-2:
 index.html : It includes a navigation bar, a slider showcasing different product categories, features, product details, a gallery, and a section for new arrivals with footer.
